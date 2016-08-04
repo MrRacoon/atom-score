@@ -1,12 +1,12 @@
 {
-  "name": "vim-mode-treats",
-  "main": "./lib/vim-mode-treats",
+  "name": "vim-score",
+  "main": "./lib/vim-score",
   "version": "0.0.0",
-  "description": "Extend vim-mode with a scoer keeping system and delicious treats",
+  "description": "Extend vim-mode with a score keeping system",
   "keywords": [
   ],
   "activationCommands": { },
-  "repository": "https://github.com/MrRacoon/vim-mode-treats",
+  "repository": "https://github.com/MrRacoon/vim-score",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"

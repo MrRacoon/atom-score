@@ -1,4 +1,4 @@
-# vim-mode-treats package
+# vim-score package
 
 A short description of your package.
 

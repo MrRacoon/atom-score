@@ -2,8 +2,8 @@
   "context-menu": {
     "atom-text-editor": [
       {
-        "label": "Toggle vim-mode-treats",
-        "command": "vim-mode-treats:toggle"
+        "label": "Toggle vim-score",
+        "command": "vim-score:toggle"
       }
     ]
   },
@@ -12,11 +12,11 @@
       "label": "Packages",
       "submenu": [
         {
-          "label": "vim-mode-treats",
+          "label": "vim-score",
           "submenu": [
             {
               "label": "Toggle",
-              "command": "vim-mode-treats:toggle"
+              "command": "vim-score:toggle"
             }
           ]
         }
