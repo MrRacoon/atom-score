@@ -1,0 +1,24 @@
+{
+  "name": "vim-mode-treats",
+  "main": "./lib/vim-mode-treats",
+  "version": "0.0.0",
+  "description": "Extend vim-mode with a scoer keeping system and delicious treats",
+  "keywords": [
+  ],
+  "activationCommands": { },
+  "repository": "https://github.com/MrRacoon/vim-mode-treats",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+  },
+  "consumedServices": {
+    "status-bar": {
+      "versions": {
+        "^1.0.0": "consumeStatusBar"
+      }
+    }
+  }
+
+}

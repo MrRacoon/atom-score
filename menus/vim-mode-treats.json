@@ -1,0 +1,26 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Toggle vim-mode-treats",
+        "command": "vim-mode-treats:toggle"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "vim-mode-treats",
+          "submenu": [
+            {
+              "label": "Toggle",
+              "command": "vim-mode-treats:toggle"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
