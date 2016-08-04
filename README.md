@@ -8,13 +8,15 @@ For instance:
 
 > You want to learn to be more vigilant about keeping code folds 'folded'
 
-so if I give you 2 points for closing folds, and **take 2 points** everytime you open a fold. You should eventually learn to close every fold you open?
+so if I **give 2 points** for closing folds, and **take 2 points** every time a fold is opened. The developer should eventually learn to close every fold they open right?
 
 TBO, I don't actually know the answer to that. That's why I built this experiment :)
 
+I'm compiling achievements and adding points to atom commands. Out of the gate, it's mostly all personal preference. But I hope that soon I can have a profile system of sorts. And let the developer pick and choose the habits they want to hone.
+
 ## Setup
 
-Currently, this package is undergoing rapid development. Don't feel it's mature enough atm to go on the atom package site. Until then you can play with the early stuff with:
+Currently, this package is undergoing rapid development. I don't feel it's mature enough at the moment to go on the atom package site. Until then you can play with the early stuff with:
 
 ```
 git clone https://github.com/mrracoon/atom-score.git
