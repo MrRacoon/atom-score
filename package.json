@@ -1,12 +1,12 @@
 {
-  "name": "vim-score",
-  "main": "./lib/vim-score",
+  "name": "atom-score",
+  "main": "./lib/atom-score",
   "version": "0.0.0",
-  "description": "Extend vim-mode with a score keeping system",
+  "description": "Add a score keeping system for workflow training",
   "keywords": [
   ],
   "activationCommands": { },
-  "repository": "https://github.com/MrRacoon/vim-score",
+  "repository": "https://github.com/MrRacoon/atom-score",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
@@ -20,5 +20,4 @@
       }
     }
   }
-
 }
