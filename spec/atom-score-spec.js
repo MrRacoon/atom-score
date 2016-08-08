@@ -1,44 +1,44 @@
 'use babel';
 
-import VimScore from '../lib/vim-score';
+import AtomScore from '../lib/atom-score';
 
 // Use the command `window:run-package-specs` (cmd-alt-ctrl-p) to run specs.
 //
 // To run a specific `it` or `describe` block add an `f` to the front (e.g. `fit`
 // or `fdescribe`). Remove the `f` to unfocus the block.
 
-describe('VimScore', () => {
+describe('AtomScore', () => {
   let workspaceElement, activationPromise;
 
   beforeEach(() => {
     workspaceElement = atom.views.getView(atom.workspace);
-    activationPromise = atom.packages.activatePackage('vim-score');
+    activationPromise = atom.packages.activatePackage('atom-score');
   });
 
-  describe('when the vim-score:toggle event is triggered', () => {
+  describe('when the atom-score:toggle event is triggered', () => {
     it('hides and shows the modal panel', () => {
       // Before the activation event the view is not on the DOM, and no panel
       // has been created
-      expect(workspaceElement.querySelector('.vim-score')).not.toExist();
+      expect(workspaceElement.querySelector('.atom-score')).not.toExist();
 
       // This is an activation event, triggering it will cause the package to be
       // activated.
-      atom.commands.dispatch(workspaceElement, 'vim-score:toggle');
+      atom.commands.dispatch(workspaceElement, 'atom-score:toggle');
 
       waitsForPromise(() => {
         return activationPromise;
       });
 
       runs(() => {
-        expect(workspaceElement.querySelector('.vim-score')).toExist();
+        expect(workspaceElement.querySelector('.atom-score')).toExist();
 
-        let vimScoreElement = workspaceElement.querySelector('.vim-score');
-        expect(vimScoreElement).toExist();
+        let atomScoreElement = workspaceElement.querySelector('.atom-score');
+        expect(atomScoreElement).toExist();
 
-        let vimScoreElement);
-        expect(vimScorePanel.isVisible()).toBe(true);
-        atom.commands.dispatch(workspaceElement, 'vim-score:toggle');
-        expect(vimScorePanel.isVisible()).toBe(false);
+        let atomScoreElement;
+        expect(atomScorePanel.isVisible()).toBe(true);
+        atom.commands.dispatch(workspaceElement, 'atom-score:toggle');
+        expect(atomScorePanel.isVisible()).toBe(false);
       });
     });
 
@@ -51,11 +51,11 @@ describe('VimScore', () => {
       // workspaceElement to the DOM are generally slower than those off DOM.
       jasmine.attachToDOM(workspaceElement);
 
-      expect(workspaceElement.querySelector('.vim-score')).not.toExist();
+      expect(workspaceElement.querySelector('.atom-score')).not.toExist();
 
       // This is an activation event, triggering it causes the package to be
       // activated.
-      atom.commands.dispatch(workspaceElement, 'vim-score:toggle');
+      atom.commands.dispatch(workspaceElement, 'atom-score:toggle');
 
       waitsForPromise(() => {
         return activationPromise;
@@ -63,10 +63,10 @@ describe('VimScore', () => {
 
       runs(() => {
         // Now we can test for view visibility
-        let vimScoreElement = workspaceElement.querySelector('.vim-score');
-        expect(vimScoreElement).toBeVisible();
-        atom.commands.dispatch(workspaceElement, 'vim-score:toggle');
-        expect(vimScoreElement).not.toBeVisible();
+        let atomScoreElement = workspaceElement.querySelector('.atom-score');
+        expect(atomScoreElement).toBeVisible();
+        atom.commands.dispatch(workspaceElement, 'atom-score:toggle');
+        expect(atomScoreElement).not.toBeVisible();
       });
     });
   });
