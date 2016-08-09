@@ -10,7 +10,6 @@ describe('A score keeper', function () {
     board     = new AtomScoreBoard()
     fakeEntry = new Rule('j', 'vim-mode:move-down', -1)
     fakeEntry.resetTime()
-    console.log(fakeEntry)
     board.addEntry(fakeEntry)
   });
 

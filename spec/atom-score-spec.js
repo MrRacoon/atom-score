@@ -9,7 +9,6 @@ import AtomScore from '../lib/atom-score';
 
 describe('AtomScore', () => {
   beforeEach(function () {
-    console.log('asdf')
 
   });
 });
