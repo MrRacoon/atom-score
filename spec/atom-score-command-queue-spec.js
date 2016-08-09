@@ -3,6 +3,7 @@
 import AtomScoreCommandQueue from '../lib/atom-score-command-queue'
 import { Rule } from '../lib/atom-score-rules'
 
+var sut, fakeEvent
 const ARBITRARY = 'deadbeef'
 
 describe('A queue for keeping track of commands', function () {
@@ -63,6 +64,14 @@ describe('A queue for keeping track of commands', function () {
       describe('when asking about the commands issued', function () {
         it('should return a list of strings equal to the amount of commands issued', function () {
           expect(sut.commands().length).toEqual(sut.queue.length)
+        });
+      });
+      describe('when asked to reset', function () {
+        beforeEach(function () {
+          sut.reset()
+        });
+        it('should clear the queue', function () {
+          expect(sut.queue.length).toEqual(0)
         });
       });
     });

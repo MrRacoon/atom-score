@@ -1,35 +1,48 @@
 'use babel';
 
-import { Rule } from '../lib/atom-score-rules'
+import { Rule, rules, sample } from '../lib/atom-score-rules'
 
-describe('The rule class', function () {
-  var fakeRule;
+var fakeRule, rule
+
+describe('The rule module', function () {
   beforeEach(function () {
-    fakeRule = {
-      command: 'vim-mode:yank',
-      key: 'y',
-      points: 10,
-      date: new Date()
-    }
-    rule = new Rule(fakeRule.key, fakeRule.command, fakeRule.points)
+    rule = sample()
   });
   describe('properties', function () {
     it('should have points', function () {
-      expect(rule.points).toEqual(fakeRule.points)
+      expect(rule.points).toBeDefined()
     });
     it('should have command', function () {
-      expect(rule.command).toEqual(fakeRule.command)
+      expect(rule.command).toBeDefined()
     });
     it('should have key', function () {
-      expect(rule.key).toEqual(fakeRule.key)
+      expect(rule.key).toBeDefined()
     });
   });
-  describe('methods', function () {
-    describe('resetTime', function () {
-      it('should reset the date of the event', function () {
-        rule.resetTime()
-        expect(rule.time).toNotEqual(fakeRule.time)
-      });
+  describe('resetTime', function () {
+    it('should reset the date of the event', function () {
+      spyOn(Date, 'now').andCallFake(() => Math.random())
+      const r1 = rule.time
+      rule.resetTime()
+      const r2 = rule.time
+      expect(r1).toNotEqual(r2)
+    });
+  });
+  describe('timeStamped', function () {
+    it('should return a new instance of the rule with a new time', function () {
+      spyOn(Date, 'now').andCallFake(() => Math.random())
+      const r1 = rule.timeStamped()
+      const r2 = rule.timeStamped()
+      expect(r1).toNotEqual(r2)
+    });
+  });
+  describe('the sample function', function () {
+    it('should return a rule from the set of rules', function () {
+      const r = sample()
+      expect(rules).toContain(r)
+    });
+    it('should be relatively random', function () {
+      expect([sample(), sample()]).toNotEqual([sample(), sample()])
     });
   });
 });
