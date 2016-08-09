@@ -32,7 +32,7 @@ describe('A queue for keeping track of commands', function () {
       sut = new AtomScoreCommandQueue()
       fakeEvent = new Rule('j', 'vim-mode:move-down', -1)
     });
-    describe('when adding an event', function () {
+    describe('after adding an event', function () {
       beforeEach(function () {
         sut.add(fakeEvent)
       });
@@ -42,6 +42,21 @@ describe('A queue for keeping track of commands', function () {
         });
         it('should contain the event passed in', function () {
           expect(sut.queue).toEqual([fakeEvent])
+        });
+      });
+      describe('when asking about the score', function () {
+        it('should return the aggregation of all scores in the queue', function () {
+          expect(sut.score()).toEqual(fakeEvent.points)
+        });
+      });
+      describe('when asking about the apm', function () {
+        it('should return the length of the queue times 4', function () {
+          expect(sut.apm()).toEqual(sut.queue.length * 4)
+        });
+      });
+      describe('when asking about the commands issued', function () {
+        it('should return a list of strings equal to the amount of commands issued', function () {
+          expect(sut.commands().length).toEqual(sut.queue.length)
         });
       });
     });
