@@ -8,7 +8,8 @@ describe('The rule class', function () {
     fakeRule = {
       command: 'vim-mode:yank',
       key: 'y',
-      points: 10
+      points: 10,
+      date: new Date()
     }
     rule = new Rule(fakeRule.key, fakeRule.command, fakeRule.points)
   });
@@ -21,6 +22,14 @@ describe('The rule class', function () {
     });
     it('should have key', function () {
       expect(rule.key).toEqual(fakeRule.key)
+    });
+  });
+  describe('methods', function () {
+    describe('resetTime', function () {
+      it('should reset the date of the event', function () {
+        rule.resetTime()
+        expect(rule.time).toNotEqual(fakeRule.time)
+      });
     });
   });
 });
