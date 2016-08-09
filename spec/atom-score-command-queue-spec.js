@@ -16,14 +16,20 @@ describe('A queue for keeping track of commands', function () {
       it('should have an empty queue', function () {
         expect(sut.queue.length).toEqual(0)
       });
+      it('should serialize into the initial value', function () {
+        expect(sut.serialize()).toEqual([])
+      });
     });
-    describe('using no argument', function () {
+    describe('using an argument', function () {
       beforeEach(function () {
         sut = new AtomScoreCommandQueue([ARBITRARY])
         console.log(sut)
       });
       it('should have an empty queue', function () {
         expect(sut.queue.length).toEqual(1)
+      });
+      it('should serialize into the initial value', function () {
+        expect(sut.serialize()).toEqual([ARBITRARY])
       });
     });
   });
