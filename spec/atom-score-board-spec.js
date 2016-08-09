@@ -3,25 +3,21 @@
 import AtomScoreBoard from '../lib/atom-score-board'
 import { Rule } from '../lib/atom-score-rules'
 
-let board, fakeEntry;
+let board, fakeEvent;
 
 describe('A score keeper', function () {
   beforeEach(function () {
     board     = new AtomScoreBoard()
-    fakeEntry = new Rule('j', 'vim-mode:move-down', -1)
-    fakeEntry.resetTime()
-    board.addEntry(fakeEntry)
+    fakeEvent = new Rule('j', 'vim-mode:move-down', -1)
+    board.addEvent(fakeEvent)
   });
 
   describe('The initial state', function () {
     it('should set score', function () {
-      expect(board.score()).toEqual(fakeEntry.points)
+      expect(board.score()).toEqual(fakeEvent.points)
     });
     it('should set apm', function () {
-      expect(board.apm()).toEqual(2)
-    });
-    it('should set history', function () {
-      expect(board.history()).toEqual({'vim-mode:move-down': 1})
+      expect(board.apm()).toEqual(4)
     });
   });
 
@@ -34,9 +30,6 @@ describe('A score keeper', function () {
     });
     it('should reset the apm', function () {
       expect(board.apm()).toEqual(0)
-    });
-    it('should not reset the history', function () {
-      expect(board.history()).toEqual({})
     });
   });
 
