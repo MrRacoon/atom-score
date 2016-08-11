@@ -14,7 +14,7 @@ fakeScoreBoard = {
   score: -1,
   apm: 24,
   commands: ['^e', 'A', 'j', 'j', 'k', 'j'],
-  recentScore: -1,
+  spm: -1,
   counts: {
     'vim-mode:move-down': 3,
     'vim-mode:move-up': 1,
@@ -32,7 +32,7 @@ fakeScoreBoard2 = {
   score: -2,
   apm: 28,
   commands: ['j', '^e', 'A', 'j', 'j', 'k', 'j'],
-  recentScore: -2,
+  spm: -2,
   counts: {
     'vim-mode:move-down': 4,
     'vim-mode:move-up': 1,
