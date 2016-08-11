@@ -12,7 +12,6 @@ describe('A queue for keeping track of commands', function () {
     describe('using no argument', function () {
       beforeEach(function () {
         sut = new AtomScoreCommandQueue()
-        console.log(sut)
       });
       it('should have an empty queue', function () {
         expect(sut.queue.length).toEqual(0)
@@ -24,7 +23,6 @@ describe('A queue for keeping track of commands', function () {
     describe('using an argument', function () {
       beforeEach(function () {
         sut = new AtomScoreCommandQueue([ARBITRARY])
-        console.log(sut)
       });
       it('should have an empty queue', function () {
         expect(sut.queue.length).toEqual(1)

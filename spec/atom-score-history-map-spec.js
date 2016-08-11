@@ -50,6 +50,18 @@ describe('A map for keeping track of history information', function () {
           expect(sut.hist[fakeEvent.command].count).toEqual(1)
         })
       });
+      describe('calling score', function () {
+        it('should return the cumulative score of the map', function () {
+          expect(sut.score()).toEqual(fakeEvent.points)
+        });
+      });
+      describe('calling counts', function () {
+        it('should return map of command to counts called', function () {
+          const expected = {}
+          expected[fakeEvent.command] = 1
+          expect(sut.counts()).toEqual(expected)
+        });
+      });
     });
     describe('after adding multiple events', function () {
       beforeEach(function () {
@@ -66,6 +78,18 @@ describe('A map for keeping track of history information', function () {
         it('should increase by one', function () {
           expect(sut.hist[fakeEvent.command].count).toEqual(3)
         })
+      });
+      describe('calling score', function () {
+        it('should return the cumulative score of the map', function () {
+          expect(sut.score()).toEqual(fakeEvent.points * 3)
+        });
+      });
+      describe('calling counts', function () {
+        it('should return map of command to counts called', function () {
+          const expected = {}
+          expected[fakeEvent.command] = 3
+          expect(sut.counts()).toEqual(expected)
+        });
       });
     });
   });
