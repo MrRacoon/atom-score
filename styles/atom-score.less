@@ -8,40 +8,62 @@
 
 .atom-score-panel {
   padding: 5px;
-  background-color: @base-background-color;
-  color: lighten(grey, 20);
+  background-color: @overlay-background-color;
+  color: @text-color;
   font-size: 12pt;
   font-family: monospace;
 }
 
-.atom-score-panel-title {
+.atom-score-pellet {
+  background-color: @background-color-selected;
   margin: 0px 5px;
+  padding: 1px 5px;
+  border-width: 1px;
+  border-style: inset;
+  border-radius: 9px;
+  border-color: @pane-item-border-color;
 }
 
-.atom-score-panel-score {
+.atom-score-panel-label {
+  .atom-score-pellet();
   float: right;
+}
+
+.atom-score-panel-title {
+  .atom-score-pellet();
   margin: 0px 5px;
+  display: none;
+}
+
+.atom-score-panel-score-container {
+  .atom-score-panel-label();
+}
+
+.atom-score-panel-score-title {
+  padding-right: 6px;
+  border-width: 0px 4px 0px 0px;
+  border-style: solid;
+  border-color: @pane-item-border-color;
+  border-radius: 10px;
 }
 
 .atom-score-panel-apm {
-  float: right;
-  margin: 0px 5px;
+  .atom-score-panel-label();
 }
 
 .atom-score-panel-recent-score {
-  float: right;
-  margin: 0px 3px;
+  .atom-score-panel-label();
 }
 
 .atom-score-panel-commands {
   margin: 0px 5px;
-  color: yellow;
+  color: @text-color-info;
 
   &.increasing {
-    color: green;
+    color: @text-color-info;
   }
 
   &.decreasing {
-    color: red;
+    color: @text-color-info;
   }
 }
