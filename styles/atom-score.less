@@ -7,19 +7,19 @@
 .atom-score { }
 
 .atom-score-panel {
-  padding: 5px;
   background-color: @overlay-background-color;
   color: @text-color;
   font-size: 12pt;
   font-family: monospace;
+  padding: 5px 0 15px 0;
 }
 
 .atom-score-pellet {
   background-color: @background-color-selected;
   margin: 0px 5px;
-  padding: 1px 5px;
+  padding: 3px;
   border-width: 1px;
-  border-style: inset;
+  border-style: ridge;
   border-radius: 9px;
   border-color: @pane-item-border-color;
 }
@@ -39,16 +39,24 @@
   .atom-score-panel-label();
 }
 
-.atom-score-panel-score-title {
+.title {
   padding-right: 6px;
-  border-width: 0px 4px 0px 0px;
+  border-width: 0px 1px 0px 0px;
   border-style: solid;
-  border-color: @pane-item-border-color;
-  border-radius: 10px;
+  border-color: grey;
+  border-radius: 9px;
 }
 
-.atom-score-panel-apm {
+.atom-score-panel-score-title {
+  .title();
+}
+
+.atom-score-panel-apm-container {
   .atom-score-panel-label();
+}
+
+.atom-score-panel-apm-title {
+  .title();
 }
 
 .atom-score-panel-recent-score {
@@ -56,14 +64,15 @@
 }
 
 .atom-score-panel-commands {
-  margin: 0px 5px;
+  //margin: 0px 5px;
   color: @text-color-info;
+  background-image: linear-gradient(to right, @app-background-color, @overlay-background-color 40%);
 
   &.increasing {
-    color: @text-color-info;
+    color: @text-color-success;
   }
 
   &.decreasing {
-    color: @text-color-info;
+    color: @text-color-error;
   }
 }
