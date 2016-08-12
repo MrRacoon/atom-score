@@ -1,5 +1,8 @@
 # atom-score package
 
+[![dependencies Status](https://david-dm.org/MrRacoon/atom-score/status.svg)](https://david-dm.org/MrRacoon/atom-score)
+[![Build Status](https://travis-ci.org/MrRacoon/atom-score.svg?branch=master)](https://travis-ci.org/MrRacoon/atom-score)
+
 A plugin for the Atom editor, to provide instant feedback during to your workflow.
 
 It's hard to break habits. And it's fun to play games. Let's build a system to keep track of your coding habits, and try to sway you into better habits with points.
