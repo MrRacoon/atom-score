@@ -10,11 +10,11 @@ let sut, fakeEvent, fakeHistory, fakeCommandQ;
 describe('A score keeper', function () {
   beforeEach(function () {
     sut          = new AtomScoreBoard()
-    fakeEvent    = new Rule('j', 'vim-mode:move-down', -1)
+    fakeEvent    = new Rule('j', 'vim-mode:move-down', 2)
     fakeHistory  = new AtomScoreHistoryMap()
     fakeCommandQ = new AtomScoreCommandQueue()
   });
-  describe('adding an event', function () {
+  describe('while adding an event', function () {
     it('should increase the score', function () {
       expect(sut.score()).toEqual(0)
       sut.addEvent(fakeEvent)
@@ -47,6 +47,48 @@ describe('A score keeper', function () {
       fakeCommandQ.add(fakeEvent)
       expect(sut.commands()).toEqual(fakeCommandQ.commands())
     });
+    describe('the streak', function () {
+      describe('when positive', function () {
+        beforeEach(function () {
+          sut.addEvent(fakeEvent)
+        });
+        it('should increase when given another positive event', function () {
+          const prev = sut.streak()
+          sut.addEvent(fakeEvent)
+          expect(sut.streak()).toBeGreaterThan(prev)
+        });
+        it('should assume the negative value of a negative event', function () {
+          const prev = sut.streak()
+          fakeEvent.points = -10
+          sut.addEvent(fakeEvent)
+          expect(sut.streak()).toEqual(-10)
+        });
+      });
+      describe('when negative', function () {
+        beforeEach(function () {
+          fakeEvent.points = -2
+          sut.addEvent(fakeEvent)
+        });
+        it('should decrease when given another negative event', function () {
+          const prev = sut.streak()
+          sut.addEvent(fakeEvent)
+          expect(sut.streak()).toBeLessThan(prev)
+        });
+        it('should assume any given poisitive event\'s points', function () {
+          const prev = sut.streak()
+          fakeEvent.points = 3
+          sut.addEvent(fakeEvent)
+          expect(sut.streak()).toEqual(fakeEvent.points)
+        });
+      });
+    });
+    it('should alter the streak', function () {
+      expect(sut.streak()).toEqual(0)
+      sut.addEvent(fakeEvent)
+      expect(sut.streak()).toEqual(fakeEvent.points)
+      sut.addEvent(fakeEvent)
+      expect(sut.streak()).toEqual(fakeEvent.points*2)
+    });
   });
 
   describe('after given a single event', function () {
@@ -74,6 +116,9 @@ describe('A score keeper', function () {
       it('should return commands in a list of command keys', function () {
         expect(sut.commands()).toEqual(fakeCommandQ.commands())
       });
+      it('should return the streak counter', function () {
+        expect(sut.streak()).toEqual(fakeEvent.points)
+      });
     });
   });
 
@@ -95,6 +140,9 @@ describe('A score keeper', function () {
     });
     it('should reset the history', function () {
       expect(sut.history()).toEqual({})
+    });
+    it('should reset the streak', function () {
+
     });
   });
 
