@@ -3,6 +3,8 @@
 [![dependencies Status](https://david-dm.org/MrRacoon/atom-score/status.svg)](https://david-dm.org/MrRacoon/atom-score)
 [![Build Status](https://travis-ci.org/MrRacoon/atom-score.svg?branch=master)](https://travis-ci.org/MrRacoon/atom-score)
 
+## Motivation
+
 A plugin for the Atom editor, to provide instant feedback during to your workflow.
 
 It's hard to break habits. And it's fun to play games. Let's build a system to keep track of your coding habits, and try to sway you into better habits with points.
@@ -30,6 +32,5 @@ apm link
 ## Contributions
 
 Pull requests always welcome.
-
 
 ![A screenshot of your package](https://f.cloud.github.com/assets/69169/2290250/c35d867a-a017-11e3-86be-cd7c5bf3ff9b.gif)
