@@ -27,8 +27,6 @@ export default {
       atom.commands.add('atom-workspace', rule.command, () => this.trigger(rule.timeStamped()))
     })
 
-    return this
-
   },
 
   serialize() {
