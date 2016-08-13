@@ -4,15 +4,15 @@
   "version": "0.0.0",
   "private": true,
   "description": "Add a score keeping system for workflow training",
-  "keywords": [
-  ],
-  "activationCommands": { },
+  "keywords": [],
+  "activationCommands": {},
   "repository": "https://github.com/MrRacoon/atom-score",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
   "dependencies": {
+    "redux": "^3.5.2"
   },
   "consumedServices": {
     "status-bar": {
