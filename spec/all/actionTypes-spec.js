@@ -24,7 +24,6 @@ const test = (f,t) => {
 
 for (f in sut) {
   for (t in sut[f].types) {
-    console.log(f)
     test(f, t)
   }
 }
