@@ -4,13 +4,15 @@ import * as features from '../../lib'
 
 const sut = features.default
 
-for (f in sut) {
-  describe('constants for ' + f, function () {
+var feature
+
+for (feature in sut) {
+  describe('constants for ' + feature, function () {
     it('should include NAME', function () {
-      expect(sut[f].constants.NAME).toBeDefined()
+      expect(sut[feature].constants.NAME).toBeDefined()
     })
     it('should include NAME', function () {
-      expect(sut[f].constants.INITIAL_STATE).toBeDefined()
+      expect(sut[feature].constants.INITIAL_STATE).toBeDefined()
     })
   })
 }

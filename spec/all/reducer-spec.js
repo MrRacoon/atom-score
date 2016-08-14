@@ -4,10 +4,11 @@ import * as features from '../../lib'
 
 const sut = features.default
 
-for (f in sut) {
-  describe('The reducer for ' + f, function () {
+var feature
+for (feature in sut) {
+  describe('The reducer for ' + feature, function () {
     it('should return an initial state on init', function () {
-      expect(sut[f].reducer(undefined, { type: '@@redux/init' })).toBeDefined()
+      expect(sut[feature].reducer(undefined, { type: '@@redux/init' })).toBeDefined()
     })
   })
 }

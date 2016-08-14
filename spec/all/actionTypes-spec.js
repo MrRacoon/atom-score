@@ -21,9 +21,10 @@ const test = (f,t) => {
   })
 }
 
+var feature, type
 
-for (f in sut) {
-  for (t in sut[f].types) {
-    test(f, t)
+for (feature in sut) {
+  for (type in sut[feature].types) {
+    test(feature, type)
   }
 }

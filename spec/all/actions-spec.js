@@ -4,12 +4,14 @@ import * as features from '../../lib'
 
 const sut = features.default
 
-for (f in features.default) {
-  describe(`Actions for ${f}`, function () {
-    for (a in sut[f].actions) {
-      describe(a, function () {
+var feature, action
+
+for (feature in features.default) {
+  describe(`Actions for ${feature}`, function () {
+    for (action in sut[feature].actions) {
+      describe(action, function () {
         it('should be a function', function () {
-          expect(typeof sut[f].actions[a]).toEqual('function')
+          expect(typeof sut[feature].actions[action]).toEqual('function')
         })
       })
     }
