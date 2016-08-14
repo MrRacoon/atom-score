@@ -12,13 +12,13 @@ const test = (f,t) => {
       it('should be a string', function () {
         expect(sut[f].types[t]).toBeDefined()
         expect(typeof sut[f].types[t]).toEqual('string')
-      });
+      })
       it('should have a unique value', function () {
         expect(seenTypes.indexOf(sut[f].types[t])).toEqual(-1)
         seenTypes.push(sut[f].types[t])
-      });
-    });
-  });
+      })
+    })
+  })
 }
 
 

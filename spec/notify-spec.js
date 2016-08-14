@@ -7,7 +7,7 @@ import {
   warning,
   error,
   fatalError
-} from '../lib/notify'
+} from '../lib/behavior/notify'
 
 const ARBITRARY = 'deadbeef'
 

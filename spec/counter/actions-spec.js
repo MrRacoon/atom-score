@@ -11,22 +11,22 @@ describe('Counter actions', function () {
         type: types.INCREMENT,
         amount: ARBITRARY
       })
-    });
-  });
+    })
+  })
   describe('set', function () {
     it('should return the action for setting the counter', function () {
       expect(actions.set(ARBITRARY)).toEqual({
         type: types.SET,
         amount: ARBITRARY
       })
-    });
-  });
+    })
+  })
   describe('reset', function () {
     it('should return an action for resetting the counter to 0', function () {
       expect(actions.reset()).toEqual({
         type: types.SET,
         amount: 0
       })
-    });
-  });
-});
+    })
+  })
+})

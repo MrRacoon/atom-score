@@ -10,8 +10,8 @@ for (f in features.default) {
       describe(a, function () {
         it('should be a function', function () {
           expect(typeof sut[f].actions[a]).toEqual('function')
-        });
-      });
+        })
+      })
     }
-  });
+  })
 }

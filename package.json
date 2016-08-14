@@ -9,7 +9,9 @@
   "repository": "https://github.com/MrRacoon/atom-score",
   "license": "MIT",
   "scripts": {
-      "lint": "eslint lib/**/*.js || 0",
+      "lint": "npm run lint:lib && npm run lint:spec",
+      "lint:lib": "eslint lib/**/*.js",
+      "lint:spec": "eslint spec/**/*.js",
       "test": "atom --test --timeout 60 ./lib/**/*.spec.js",
       "test:watch": "npm run test -- --watch"
   },
