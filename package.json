@@ -8,6 +8,9 @@
   "activationCommands": {},
   "repository": "https://github.com/MrRacoon/atom-score",
   "license": "MIT",
+  "scripts": {
+      "lint": "eslint lib/**/*.js || 0"
+  },
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
@@ -20,5 +23,9 @@
         "^1.0.0": "consumeStatusBar"
       }
     }
+  },
+  "devDependencies": {
+    "eslint": "^3.3.0",
+    "eslint-config-google": "^0.6.0"
   }
 }
