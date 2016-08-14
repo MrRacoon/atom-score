@@ -4,6 +4,8 @@ env:
 extends: 'eslint:recommended'
 parserOptions:
   sourceType: module
+globals:
+  atom: true
 rules:
   indent:
     - error
