@@ -7,7 +7,7 @@ import {
   warning,
   error,
   fatalError
-} from '../lib/atom-score-notifier'
+} from '../lib/notify'
 
 const ARBITRARY = 'deadbeef'
 
