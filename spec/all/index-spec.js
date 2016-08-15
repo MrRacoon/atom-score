@@ -2,21 +2,25 @@
 
 import * as features from '../../lib'
 
-var feature
-
-for (feature in features.default) {
-  describe('The entry point for ' + feature, function () {
+const test = f => {
+  describe('The entry point for ' + f, function () {
     it('should provide constants', function () {
-      expect(features[feature].constants).toBeDefined()
+      expect(features[f].constants).toBeDefined()
     })
     it('should provide types', function () {
-      expect(features[feature].types).toBeDefined()
+      expect(features[f].types).toBeDefined()
     })
     it('should provide actions', function () {
-      expect(features[feature].actions).toBeDefined()
+      expect(features[f].actions).toBeDefined()
     })
     it('should provide a reducer', function () {
-      expect(features[feature].reducer).toBeDefined()
+      expect(features[f].reducer).toBeDefined()
     })
   })
+}
+
+var feature
+
+for (f in features.default) {
+  test(f)
 }

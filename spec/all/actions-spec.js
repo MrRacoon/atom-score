@@ -6,14 +6,18 @@ const sut = features.default
 
 var feature, action
 
-for (feature in features.default) {
+const test = (feature, action) => {
   describe(`Actions for ${feature}`, function () {
-    for (action in sut[feature].actions) {
-      describe(action, function () {
-        it('should be a function', function () {
-          expect(typeof sut[feature].actions[action]).toEqual('function')
-        })
+    describe(action, function () {
+      it('should be a function', function () {
+        expect(typeof sut[feature].actions[action]).toEqual('function')
       })
-    }
+    })
   })
+}
+
+for (feature in sut) {
+  for (action in sut[feature].actions) {
+    test(feature, action)
+  }
 }

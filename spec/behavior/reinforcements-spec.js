@@ -9,5 +9,5 @@ import {
 describe('reinforcements', function () {
   it('should be a list', function () {
 
-  });
+  })
 })
