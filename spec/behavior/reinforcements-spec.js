@@ -7,5 +7,7 @@ import {
 } from '../../lib/behavior/reinforcements'
 
 describe('reinforcements', function () {
+  it('should be a list', function () {
 
+  });
 })
