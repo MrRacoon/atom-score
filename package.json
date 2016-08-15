@@ -10,9 +10,10 @@
   "license": "MIT",
   "scripts": {
     "lint": "npm run lint:lib && npm run lint:spec",
-    "lint:lib": "eslint ./lib/**/*.js",
-    "lint:spec": "eslint ./spec/**/*.js",
-    "test": "npm run lint && atom --test --timeout 60 ./spec/**/*-spec.js"
+    "lint:lib": "eslint ./lib/**/*.js --fix || true",
+    "lint:spec": "eslint ./spec/**/*.js --fix || true",
+    "spec": "atom --test --timeout 60 ./spec/**/*-spec.js || true",
+    "test": "npm run lint && npm run spec"
   },
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
