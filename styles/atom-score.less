@@ -1,23 +1,49 @@
 // The ui-variables file is provided by base themes provided by Atom.
-//
-// See https://github.com/atom/atom-dark-ui/blob/master/styles/ui-variables.less
 // for a full listing of what's available.
 @import "ui-variables";
 
 
 @panel-width: 200px;
 atom-score-side-panel {
-  div {
-    width: @panel-width;
-    white-space: nowrap;
-    font-size: 12pt;
-
-  }
+  width: @panel-width;
+  white-space: nowrap;
+  font-size: 12pt;
   .entry {
     position: fixed;
     border-radius: 10px;
     margin: 3px;
     padding: 0px 5px;
+  }
+
+  .side-panel-pill {
+    background-color: @background-color-selected;
+    margin: 0px 5px;
+    padding: 3px;
+    border-width: 1px;
+    border-style: ridge;
+    border-radius: 9px;
+    border-color: @pane-item-border-color;
+    float: left;
+    text-align: left;
+    width: 100%;
+
+    .side-panel-pill-label {
+      display: inline-block;
+    }
+
+    .side-panel-pill-value {
+      width: 100%;
+      display: inline-block;
+      background-color: @overlay-background-color;
+      padding: 0px 6px;
+      border-width: 0px 1px 0px 0px;
+      border-style: solid;
+      border-color: grey;
+      border-radius: 9px;
+    }
+  }
+  .relative-bar-chart {
+    
   }
 }
 
@@ -52,6 +78,7 @@ atom-score-panel {
       border-radius: 9px;
     }
   }
+
 }
 
 
