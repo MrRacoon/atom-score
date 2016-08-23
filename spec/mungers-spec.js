@@ -1,50 +1,55 @@
-'use babel'
+'use babel';
 
-import { getScore, getCount, lastCommandName } from '../lib/mungers'
-import rootReducer            from '../lib/rootReducer'
-import { score, counter, history, last } from '../lib/state'
+import Immutable from 'immutable';
+import * as mungers from '../lib/mungers';
+import { should } from 'chai';
+should();
 
-const STRING = 'Han solo'
-const CHAR   = 'T'
-
-const someStim  = {
-  id: STRING,
-  combo: CHAR
-}
-
-const lastCommand     = last.actions.set(someStim)
-const add5Points      = score.actions.add(5)
-const addHistoryCount = history.actions.increment(someStim)
-const addOneCount     = counter.actions.increment()
-
-var state
+let state;
 
 beforeEach(function () {
-  const stateA = {}
-  const stateB = rootReducer(stateA, addOneCount)
-  const stateC = rootReducer(stateB, addHistoryCount)
-  const stateD = rootReducer(stateC, add5Points)
-  state        = stateD
+  state = {
+    score: 1337,
+    count: 42,
+    history: Immutable.Map.of('deadbeef', 9),
+    last: {
+      id: 'deadbeef',
+      combo: 'x',
+      points: 2
+    },
+    recent: Immutable.List.of({ combo: 'x' })
+  };
 });
 
-describe('mungers to read the state', function () {
-  describe('getScore', function () {
-    it('should return the score', function () {
-      expect(getScore(state)).toEqual(5)
-      expect(getScore(rootReducer(state, add5Points))).toEqual(10)
-    })
-  })
-  describe('getCount', function () {
-    it('should return the number of command tracked', function () {
-      expect(getCount(state)).toEqual(1)
-      expect(getCount(rootReducer(state, addOneCount))).toEqual(2)
-    })
-  })
-  describe('lastCommandName', function () {
-    it('should store the last stimulus that triggered the reducer', function () {
-      expect(lastCommandName(state)).toEqual(undefined)
-      const commandAdded = rootReducer(state, lastCommand)
-      expect(lastCommandName(commandAdded)).toEqual(CHAR)
-    })
-  })
-})
+describe('The data munging interface', function () {
+  describe('the getScore method', function () {
+    it('should return the score of the state object', function () {
+      mungers.getScore(state).should.eql(1337);
+    });
+  });
+  describe('the getCount method', function () {
+    it('should return the count of stimuli seen total', function () {
+      mungers.getCount(state).should.eql(42);
+    });
+  });
+  describe('the commandCount method', function () {
+    it('should return the number of times the stimulus has been seen', function () {
+      mungers.commandCount({id: 'deadbeef'})(state).should.eql(9);
+    });
+  });
+  describe('the lastCommandName method', function () {
+    it('should return the combo of the stimulus that was last seen', function () {
+      mungers.lastCommandName(state).should.eql('x');
+    });
+  });
+  describe('the recentVimString method', function () {
+    it('should return the string of up to 20 combos from recently seen stimuli', function () {
+      mungers.recentVimString(state).should.eql('x');
+    });
+  });
+});
+
+/*
+export const recentVimString = state => state.recent.take(20).map(s => s.combo).toJS().join('');
+
+*/
