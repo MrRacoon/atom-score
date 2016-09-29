@@ -36,12 +36,22 @@ describe('The data munging interface', function () {
   });
   describe('the lastCount method', function () {
     it('should return the number of times the stimulus has been seen', function () {
-      select.lastCount({id: 'deadbeef'})(state).should.eql(9);
+      select.lastCount(state).should.eql(9);
     });
   });
   describe('the lastName method', function () {
+    it('should return the id/name of the stimulus that was last seen', function () {
+      select.lastName(state).should.eql(state.last.id);
+    });
+  });
+  describe('the lastCombo method', function () {
     it('should return the combo of the stimulus that was last seen', function () {
-      select.lastName(state).should.eql('x');
+      select.lastCombo(state).should.eql(state.last.combo);
+    });
+  });
+  describe('the lastPoints method', function () {
+    it('should return the points of the stimulus that was last seen', function () {
+      select.lastPoints(state).should.eql(state.last.points);
     });
   });
   describe('the comboString method', function () {

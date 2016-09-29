@@ -1,45 +1,31 @@
 'use babel';
 
 import { types, score } from '../../lib/state';
-
+import { stimulusStub } from '../../lib/behavior/stimuli';
 import { should } from 'chai';
 should();
 
-describe('The score tracker', function () {
+const { NAME, INITIAL_STATE, reducer } = score;
+const state = { [NAME]: INITIAL_STATE };
+const stimulus = stimulusStub();
 
-  describe('constants', function () {
-    it('should exist', function () {
-      expect(score.constants).toBeDefined();
-    });
-    describe('NAME', function () {
-      it('should exist', function () {
-        expect(score.constants.NAME).toBeDefined();
-        score.constants.NAME.should.eql('score');
-      });
-    });
-    describe('INITIAL_STATE', function () {
-      it('should exist', function () {
-        expect(score.constants.INITIAL_STATE).toBeDefined();
-        score.constants.INITIAL_STATE.should.eql(0);
-      });
-    });
+describe('score', function () {
+  it('should have a NAME', function () {
+    expect(NAME).toBeDefined();
   });
-
+  it('should have an INITIAL_STATE', function () {
+    expect(INITIAL_STATE).toBeDefined();
+  });
   describe('reducer', function () {
-    it('should exist', function () {
-      expect(score.reducer).toBeDefined();
-    });
-    describe('when given an add message', function () {
-      it('should add the amount to the score property of the state', function () {
-        score.reducer({}, types.actions.add({points: 7})).should.eql({
-          [score.constants.NAME]: 7
-        });
+    describe('ADD', function () {
+      it('should increment the count', function () {
+        reducer(state, { type: types.ADD, stimulus })[NAME]
+          .should.eql(INITIAL_STATE + stimulus.points);
       });
     });
-    describe('when given the reset method', function () {
-      it('should reset the score to zero', function () {
-        const state = score.reducer({score: 100}, types.actions.reset());
-        state.score.should.be.eql(0);
+    describe('RESET', function () {
+      it('should reset to the INITIAL_STATE', function () {
+        reducer(state, { type: types.RESET })[NAME].should.eql(INITIAL_STATE);
       });
     });
   });

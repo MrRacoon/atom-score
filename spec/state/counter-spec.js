@@ -1,48 +1,30 @@
 'use babel';
 
-import { counter, types } from '../../lib/state';
+import { types, counter } from '../../lib/state';
+import { stimulusStub } from '../../lib/behavior/stimuli';
 import { should } from 'chai';
 should();
 
+const { NAME, INITIAL_STATE, reducer } = counter;
+const state = { [NAME]: INITIAL_STATE };
+const stimulus = stimulusStub();
+
 describe('The counter', function () {
-  describe('constants', function () {
-    it('should exist', function () {
-      expect(counter.constants).toBeDefined();
-    });
-    describe('NAME', function () {
-      it('should exist', function () {
-        expect(counter.constants.NAME).toBeDefined();
-        counter.constants.NAME.should.eql('count');
-      });
-    });
-    describe('INITIAL_STATE', function () {
-      it('should exist', function () {
-        expect(counter.constants.INITIAL_STATE).toBeDefined();
-        counter.constants.INITIAL_STATE.should.eql(0);
-      });
-    });
+  it('should have a NAME', function () {
+    expect(NAME).toBeDefined();
+  });
+  it('should have an INITIAL_STATE', function () {
+    expect(INITIAL_STATE).toBeDefined();
   });
   describe('reducer', function () {
-    it('should exist', function () {
-      expect(counter.reducer).toBeDefined();
-    });
-    describe('on INIT', function () {
-      it('should properly initialize', function () {
-        counter.reducer({}, {type: '@@redux/init'}).should.eql({
-          [counter.constants.NAME]: counter.constants.INITIAL_STATE
-        });
+    describe('ADD', function () {
+      it('should increment the count', function () {
+        reducer(state, { type: types.ADD, stimulus })[NAME].should.eql(INITIAL_STATE+1);
       });
     });
-    describe('when given the ADD message', function () {
-      it('should increment the counter by 1', function () {
-        const prev = { count: 4 };
-        counter.reducer(prev, types.actions.add({})).should.eql({ count: 5 });
-      });
-    });
-    describe('when given the RESET message', function () {
-      it('should reset the counter to 0', function () {
-        const prev = { count: 4 };
-        counter.reducer(prev, types.actions.reset()).should.eql({ count: 0 });
+    describe('RESET', function () {
+      it('should reset to the INITIAL_STATE', function () {
+        reducer(state, { type: types.RESET })[NAME].should.eql(INITIAL_STATE);
       });
     });
   });
