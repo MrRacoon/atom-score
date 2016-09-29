@@ -4,15 +4,26 @@
   "version": "0.0.0",
   "private": true,
   "description": "Add a score keeping system for workflow training",
-  "keywords": [
-  ],
-  "activationCommands": { },
+  "keywords": [],
+  "activationCommands": {},
   "repository": "https://github.com/MrRacoon/atom-score",
   "license": "MIT",
+  "scripts": {
+    "lint": "npm run lint:lib && npm run lint:spec",
+    "lint:lib": "eslint ./lib/**",
+    "lint:spec": "eslint ./spec/**",
+    "spec": "atom --test --timeout 60 ./spec/**/*-spec.js",
+    "test": "npm run lint && npm run spec"
+  },
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
   "dependencies": {
+    "d3": "^4.2.2",
+    "immutable": "^3.8.1",
+    "lodash": "^4.16.2",
+    "redux": "^3.5.2",
+    "reselect": "^2.5.4"
   },
   "consumedServices": {
     "status-bar": {
@@ -20,5 +31,10 @@
         "^1.0.0": "consumeStatusBar"
       }
     }
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "eslint": "^3.3.0",
+    "eslint-config-google": "^0.6.0"
   }
 }

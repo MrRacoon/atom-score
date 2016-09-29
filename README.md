@@ -17,7 +17,7 @@ so if I **give 2 points** for closing folds, and **take 2 points** every time a 
 
 TBO, I don't actually know the answer to that. That's why I built this experiment :)
 
-I'm compiling achievements and adding points to atom commands. Out of the gate, it's mostly all personal preference. But I hope that soon I can have a profile system of sorts. And let the developer pick and choose the habits they want to hone.
+I'm compiling achievements and adding points to atom commands. Out of the gate, it's mostly all personal preference (you need to have [vim-mode][vimmode]). But I hope that soon I can have a profile system of sorts. And let the developer pick and choose the habits they want to hone.
 
 ## Setup
 
@@ -34,3 +34,5 @@ apm link
 Pull requests always welcome.
 
 ![A screenshot of your package](https://f.cloud.github.com/assets/69169/2290250/c35d867a-a017-11e3-86be-cd7c5bf3ff9b.gif)
+
+[vimmode]: https://github.com/atom/vim-mode
