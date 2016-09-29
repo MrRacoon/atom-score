@@ -21,7 +21,9 @@
   "dependencies": {
     "d3": "^4.2.2",
     "immutable": "^3.8.1",
-    "redux": "^3.5.2"
+    "lodash": "^4.16.2",
+    "redux": "^3.5.2",
+    "reselect": "^2.5.4"
   },
   "consumedServices": {
     "status-bar": {

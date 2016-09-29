@@ -1,9 +1,11 @@
 'use babel';
 
+import * as select from '../lib/selectors';
+
 import Immutable from 'immutable';
-import * as mungers from '../lib/mungers';
 import { should } from 'chai';
 should();
+
 
 let state;
 
@@ -22,34 +24,29 @@ beforeEach(function () {
 });
 
 describe('The data munging interface', function () {
-  describe('the getScore method', function () {
+  describe('the score method', function () {
     it('should return the score of the state object', function () {
-      mungers.getScore(state).should.eql(1337);
+      select.score(state).should.eql(1337);
     });
   });
-  describe('the getCount method', function () {
+  describe('the count method', function () {
     it('should return the count of stimuli seen total', function () {
-      mungers.getCount(state).should.eql(42);
+      select.count(state).should.eql(42);
     });
   });
-  describe('the commandCount method', function () {
+  describe('the lastCount method', function () {
     it('should return the number of times the stimulus has been seen', function () {
-      mungers.commandCount({id: 'deadbeef'})(state).should.eql(9);
+      select.lastCount({id: 'deadbeef'})(state).should.eql(9);
     });
   });
-  describe('the lastCommandName method', function () {
+  describe('the lastName method', function () {
     it('should return the combo of the stimulus that was last seen', function () {
-      mungers.lastCommandName(state).should.eql('x');
+      select.lastName(state).should.eql('x');
     });
   });
-  describe('the recentVimString method', function () {
+  describe('the comboString method', function () {
     it('should return the string of up to 20 combos from recently seen stimuli', function () {
-      mungers.recentVimString(state).should.eql('x');
+      select.comboString(state).should.eql('x');
     });
   });
 });
-
-/*
-export const recentVimString = state => state.recent.take(20).map(s => s.combo).toJS().join('');
-
-*/
