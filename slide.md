@@ -11,6 +11,7 @@ Who is this guy
 ===============
 
 ![me](https://avatars2.githubusercontent.com/u/2682113?v=3&s=466)
+
 *Erik Sutherland* ***/(Mr)?Racoon/***
 
 * **Education** PSU BA-CS & BA-Psyc
