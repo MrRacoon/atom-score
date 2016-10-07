@@ -23,6 +23,7 @@
     "immutable": "^3.8.1",
     "lodash": "^4.16.2",
     "partial.lenses": "^3.8.0",
+    "ramda": "^0.22.1",
     "redux": "^3.5.2",
     "reselect": "^2.5.4"
   },
