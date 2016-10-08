@@ -14,7 +14,7 @@ Who is this guy
 
 *Erik Sutherland* ***/(Mr)?Racoon/***
 
-* **Education** PSU BA-CS & BA-Psyc
+* **Education** PSU BA-CS & BA-PSYCH
 
 * **Job** Frontend Developer, Nike
 
@@ -56,3 +56,24 @@ Who is this guy
 - Menu entries `menus/*.{json,cson}`
 
 - Tests `spec/*-spec.js`
+
+---
+
+# Entry point
+
+`lib/$PACKAGE_NAME.js`
+
+Atom is going to run this file first, so everything you do must branch from this
+file.
+
+* Make your HTML elements
+* Create your Redux stores
+* Charge your flux capacitor
+
+---
+
+# Styles, menus, and bindings
+
+* read automatically
+* they're just configurations anyway
+* Tests are run on demand `window:run-package-specs`
