@@ -72,7 +72,7 @@ file.
 
 ---
 
-# Styles, menus, and bindings
+# Styles, Menus, Tests and Bindings
 
 * read automatically
 * they're just configurations anyway
