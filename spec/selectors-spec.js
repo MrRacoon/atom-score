@@ -24,7 +24,7 @@ beforeEach(function () {
   };
 });
 
-describe('The data munging interface', function () {
+describe('Selectors', function () {
   describe('the score method', function () {
     it('should return the score of the state object', function () {
       select.score(state).should.eql(stim.points * REPETITIONS);
