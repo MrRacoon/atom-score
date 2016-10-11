@@ -7,14 +7,14 @@ atom-score-side-panel {
   font-size: @font-size;
   .entry {
     &.pos {
-      background-color: @background-color-success;
+      color: @text-color-success;
     };
     &.neg {
-      background-color: @background-color-warning;
+      color: @text-color-error;
     };
-    color: @text-color;
+    background-color: @background-color-highlight;
     position: fixed;
-    border-radius: 5px;
+    border-radius: 10px;
     margin: 3px;
     padding: 0px 5px;
   }
