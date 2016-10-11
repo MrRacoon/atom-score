@@ -4,16 +4,24 @@
 
 atom-score-side-panel {
   white-space: nowrap;
-  font-size: 14pt;
+  font-size: @font-size;
   .entry {
+    &.pos {
+      background-color: @background-color-success;
+    };
+    &.neg {
+      background-color: @background-color-warning;
+    };
+    color: @text-color;
     position: fixed;
     border-radius: 5px;
     margin: 3px;
     padding: 0px 5px;
   }
 
+
   .side-panel-pill {
-    background-color: @background-color-selected;
+    background-color: @background-color-highlight;
     margin: 0px 5px;
     padding: 3px;
     float: left;
@@ -28,12 +36,9 @@ atom-score-side-panel {
     .side-panel-pill-value {
       width: 100%;
       display: inline-block;
-      background-color: @overlay-background-color;
+      background-color: @panel-heading-background-color;
       padding: 0px 6px;
     }
-  }
-  .relative-bar-chart {
-
   }
 }
 
@@ -69,14 +74,4 @@ atom-score-panel {
     }
   }
 
-}
-
-
-
-.increasing {
-  color: @text-color-success;
-}
-
-.decreasing {
-  color: @text-color-error;
 }
