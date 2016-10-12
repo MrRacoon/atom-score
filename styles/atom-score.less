@@ -19,14 +19,29 @@ atom-score-side-panel {
     padding: 0px 5px;
   }
 
+  .side-panel-selection {
+    display: table-row;
+    background-color: @background-color-highlight;
+    .flex-content {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-around;
+      .select-btn {
+        flex-basis: auto;
+        background-color: @background-color-highlight;
+      }
+    }
+  }
 
   .side-panel-pill {
     background-color: @background-color-highlight;
-    margin: 0px 5px;
+    margin: 1px 5px;
     padding: 3px;
     float: left;
     text-align: left;
     width: 100%;
+    border-radius: 10px;
 
     .side-panel-pill-label {
       display: inline-block;
