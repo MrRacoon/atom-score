@@ -1,14 +1,4 @@
 {
-  "origins": {
-    "unknown"      : 1.2,
-    "bethos"       : 1,
-    "lanwhin"      : 1,
-    "baltimore"    : 1,
-    "gorgon"       : 1,
-    "greyscale"    : 1,
-    "booleana"     : 1,
-    "loremipsumis" : 1
-  },
   "conditions": {
     "feable"       : {
       "mod": 0.1,
@@ -70,6 +60,31 @@
       "type": "weapon",
       "icon": "american-football-ball",
       "description": "From the depths of someone's garage. You've never used it and you hope you never have to..."
+    }
+  },
+  "traits": {
+    "smelly": {
+      "name": "smelly",
+      "desc" : "The item smells like.... mold? eggs? sulphur? You can't quite place it, as it burns your nose too much to try",
+      "mod": {
+        "evasion": 1.5
+      }
+    },
+    "broken": {
+      "name": "broken",
+      "desc": "It's in terrible shape, it hardly even works anymore, but so much blood and sweat has been stained into it that you need to see how far it can actually go.",
+      "mod" : {
+        "strength": 1.5,
+        "accuracy": 0.6
+      }
+    },
+    "hot": {
+      "name": "hot",
+      "desc": "hard to handle because it always feels like it came out of liquid hot magma. After a while you get used to holding it, as the last few receptors in your hand explode",
+      "mod" : {
+        "fire damage": 1.5,
+        "self-burn": 0.1
+      }
     }
   }
 }

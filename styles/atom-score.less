@@ -27,55 +27,63 @@ atom-score-side-panel {
   }
 
   .tool-tip {
-    @tool-width: 200px;
+    width: 0px;
     position: absolute;
     background-color: @tool-panel-background-color;
+    white-space: normal;
     color: white;
-    .tool-tip-title {
-      display: inline;
-      font-weight: bold;
+
+    .tool-tip-contents {
+      margin: 15px;
     }
 
     .tool-tip-icon {
       width: 64px;
       height: 64px;
       display: inline;
+      float: right;
+    }
+
+    .tool-tip-title {
+      font-weight: bold;
+    }
+
+    .tool-tip-label {
+      float: right;
+      font-size: 15;
     }
 
     .tool-tip-description {
-      margin: 5px;
-      white-space: normal;
-      width: @tool-width;
+      margin: 10px;
     }
 
-    .tool-tip-contents {
-      margin: 5px;
-      .tool-tip-title {
-      }
+    .tool-tip-trait {
+      margin: 10px;
     }
+
   }
 
-    .feable {
-      color: green;
-    }
-    .cheap {
-      color: blue;
-    }
-    .sturdy {
-      color: purple;
-    }
-    .strong {
-      color: yellow;
-    }
-    .reinforced {
-      color: orange;
-    }
-    .invulnerable {
-      color: red;
-    }
-    .thorged {
-      color: cyan;
-    }
+  .feable {
+    color: green;
+  }
+  .cheap {
+    color: blue;
+  }
+  .sturdy {
+    color: purple;
+  }
+  .strong {
+    color: yellow;
+  }
+  .reinforced {
+    color: orange;
+  }
+  .invulnerable {
+    color: red;
+  }
+  .thorged {
+    color: cyan;
+  }
 
 
   .as-item {
