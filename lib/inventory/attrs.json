@@ -1,37 +1,40 @@
 {
-  "origins": {
-    "unknown"      : 1.2,
-    "bethos"       : 1,
-    "lanwhin"      : 1,
-    "baltimore"    : 1,
-    "gorgon"       : 1,
-    "greyscale"    : 1,
-    "booleana"     : 1,
-    "loremipsumis" : 1
-  },
-  "elements" : {
-    ""          : 1.1,
-    "fire"      : 1.3,
-    "ice"       : 1.3,
-    "lightning" : 1.3,
-    "light"     : 1.5
-  },
-  "wearing": {
-    "basic"    : 1.1,
-    "common"   : 1.3,
-    "prestine" : 1.7,
-    "powerful" : 2.3,
-    "super"    : 2.9,
-    "thorged"  : 3.5
+  "conditions": {
+    "feable"       : {
+      "mod": 0.1,
+      "weight": 100
+    },
+    "cheap"       : {
+      "mod": 0.6,
+      "weight": 50
+    },
+    "sturdy"       : {
+      "mod": 0.9,
+      "weight": 20
+    },
+    "reinforced"       : {
+      "mod": 1.5,
+      "weight": 10
+    },
+    "invulnerable"       : {
+      "mod": 3.0,
+      "weight": 5
+    },
+    "thorged"       : {
+      "mod": 7.0,
+      "weight": 1
+    }
   },
   "items": {
     "armored pants": {
       "type": "legs",
-      "icon": "armored-pants"
+      "icon": "armored-pants",
+      "description": "They're not easy to gett off. Others have grown used to the pee smell that follows you"
     },
     "armored vest": {
       "type": "torso",
-      "icon": "armor-vest"
+      "icon": "armor-vest",
+      "description": "Basically a large piece of metel welded around your body. Not very comfortable to sleep in."
     },
     "baseball bat": {
       "type": "weapon",
@@ -43,19 +46,23 @@
     },
     "bo staff": {
       "type": "weapon",
-      "icon": "bo"
+      "icon": "bo",
+      "description": "Memories of your old karate teacher flood your mind as you hold it. Memories your've tried to supress for years..."
     },
     "bowie knife": {
       "type": "weapon",
-      "icon": "bowie-knife"
+      "icon": "bowie-knife",
+      "description": "Now this is a knife."
     },
     "broadsword": {
       "type": "weapon",
-      "icon": "broadsword"
+      "icon": "broadsword",
+      "description": "This thing has a big ol' blade. Looks friggin' boss."
     },
     "cardboard box shoes": {
       "type": "feet",
-      "icon": "cardboard-box"
+      "icon": "cardboard-box",
+      "description": "You accidently stumbled into them and haven't yet bothered to take them off."
     },
     "katana": {
       "type": "weapon",
@@ -63,7 +70,33 @@
     },
     "pigskin": {
       "type": "weapon",
-      "icon": "american-football-ball"
+      "icon": "american-football-ball",
+      "description": "From the depths of someone's garage. You've never used it and you hope you never have to..."
+    }
+  },
+  "traits": {
+    "smelly": {
+      "name": "smelly",
+      "desc" : "The item smells like.... mold? eggs? sulphur? You can't quite place it, as it burns your nose too much to try",
+      "mod": {
+        "evasion": 1.5
+      }
+    },
+    "broken": {
+      "name": "broken",
+      "desc": "It's in terrible shape, it hardly even works anymore, but so much blood and sweat has been stained into it that you need to see how far it can actually go.",
+      "mod" : {
+        "strength": 1.5,
+        "accuracy": 0.6
+      }
+    },
+    "hot": {
+      "name": "hot",
+      "desc": "hard to handle because it always feels like it came out of liquid hot magma. After a while you get used to holding it, as the last few receptors in your hand explode",
+      "mod" : {
+        "fire damage": 1.5,
+        "self-burn": 0.1
+      }
     }
   }
 }
