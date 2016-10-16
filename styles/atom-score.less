@@ -31,16 +31,52 @@ atom-score-side-panel {
     position: absolute;
     background-color: @tool-panel-background-color;
     color: white;
+    .tool-tip-title {
+      display: inline;
+      font-weight: bold;
+    }
+
     .tool-tip-icon {
       width: 64px;
       height: 64px;
+      display: inline;
     }
+
+    .tool-tip-description {
+      margin: 5px;
+      white-space: normal;
+      width: @tool-width;
+    }
+
     .tool-tip-contents {
       margin: 5px;
       .tool-tip-title {
       }
     }
   }
+
+    .feable {
+      color: green;
+    }
+    .cheap {
+      color: blue;
+    }
+    .sturdy {
+      color: purple;
+    }
+    .strong {
+      color: yellow;
+    }
+    .reinforced {
+      color: orange;
+    }
+    .invulnerable {
+      color: red;
+    }
+    .thorged {
+      color: cyan;
+    }
+
 
   .as-item {
     background-color: @background-color-highlight;
