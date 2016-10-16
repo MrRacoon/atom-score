@@ -1,0 +1,57 @@
+{
+  "origins": {
+    "unknown"      : 1.2,
+    "bethos"       : 1,
+    "lanwhin"      : 1,
+    "baltimore"    : 1,
+    "gorgon"       : 1,
+    "greyscale"    : 1,
+    "booleana"     : 1,
+    "loremipsumis" : 1
+  },
+  "elements" : {
+    ""          : 1.1,
+    "fire"      : 1.3,
+    "ice"       : 1.3,
+    "lightning" : 1.3,
+    "light"     : 1.5
+  },
+  "wearing": {
+    "basic"    : 1.1,
+    "common"   : 1.3,
+    "prestine" : 1.7,
+    "powerful" : 2.3,
+    "super"    : 2.9,
+    "thorged"  : 3.5
+  },
+  "items": {
+    "armored pants": {
+      "type": "legs",
+      "icon": "armored-pants"
+    },
+    "armored vest": {
+      "type": "torso",
+      "icon": "armor-vest"
+    },
+    "bo staff": {
+      "type": "weapon",
+      "icon": "bo"
+    },
+    "bowie knife": {
+      "type": "weapon",
+      "icon": "bowie-knife"
+    },
+    "broadsword": {
+      "type": "weapon",
+      "icon": "broadsword"
+    },
+    "cardboard box shoes": {
+      "type": "feet",
+      "icon": "cardboard-box"
+    },
+    "pigskin": {
+      "type": "weapon",
+      "icon": "american-football-ball"
+    }
+  }
+}
