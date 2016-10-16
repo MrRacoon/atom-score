@@ -33,6 +33,14 @@
       "type": "torso",
       "icon": "armor-vest"
     },
+    "baseball bat": {
+      "type": "weapon",
+      "icon": "baseball-bat"
+    },
+    "baton": {
+      "type": "weapon",
+      "icon": "baton"
+    },
     "bo staff": {
       "type": "weapon",
       "icon": "bo"
@@ -48,6 +56,10 @@
     "cardboard box shoes": {
       "type": "feet",
       "icon": "cardboard-box"
+    },
+    "katana": {
+      "type": "weapon",
+      "icon": "katana"
     },
     "pigskin": {
       "type": "weapon",
