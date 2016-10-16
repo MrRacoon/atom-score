@@ -4,23 +4,23 @@
       "mod": 0.1,
       "weight": 100
     },
-    "cheap"       : {
+    "cheap": {
       "mod": 0.6,
       "weight": 50
     },
-    "sturdy"       : {
+    "sturdy": {
       "mod": 0.9,
       "weight": 20
     },
-    "reinforced"       : {
+    "reinforced": {
       "mod": 1.5,
       "weight": 10
     },
-    "invulnerable"       : {
+    "invulnerable": {
       "mod": 3.0,
       "weight": 5
     },
-    "thorged"       : {
+    "thorged": {
       "mod": 7.0,
       "weight": 1
     }
@@ -38,11 +38,13 @@
     },
     "baseball bat": {
       "type": "weapon",
-      "icon": "baseball-bat"
+      "icon": "baseball-bat",
+      "description": "classic home evasion deterrent, you've given this thing about 87 nicknames by now"
     },
     "baton": {
       "type": "weapon",
-      "icon": "baton"
+      "icon": "baton",
+      "description": "this might have been the same one you got beat with during your college protestor phase"
     },
     "bo staff": {
       "type": "weapon",
@@ -66,7 +68,8 @@
     },
     "katana": {
       "type": "weapon",
-      "icon": "katana"
+      "icon": "katana",
+      "description": "bought from an ocean side novelty shop. You thought it looked cool, so the purchase was justified"
     },
     "pigskin": {
       "type": "weapon",
