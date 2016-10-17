@@ -295,7 +295,7 @@
   "traits": {
     "smelly": {
       "name": "smelly",
-      "icon": "",
+      "icon": "turd",
       "desc" : "The item smells like.... mold? eggs? sulphur? You can't quite place it, as it burns your nose too much to try",
       "mod": {
         "evasion": 1.5
