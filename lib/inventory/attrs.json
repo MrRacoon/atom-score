@@ -46,59 +46,365 @@
       "icon": "baton",
       "description": "this might have been the same one you got beat with during your college protestor phase"
     },
+    "beard": {
+      "type": "head",
+      "icon": "beard",
+      "description": ""
+    },
+    "beer bottle": {
+      "type": "weapon",
+      "icon": "beer-bottle",
+      "description": ""
+    },
+    "blunderbuss": {
+      "type": "weapon",
+      "icon": "blunderbuss",
+      "description": "Memories of your old karate teacher flood your mind as you hold it. Memories your've tried to supress for years..."
+    },
     "bo staff": {
       "type": "weapon",
       "icon": "bo",
       "description": "Memories of your old karate teacher flood your mind as you hold it. Memories your've tried to supress for years..."
+    },
+    "boomerang": {
+      "type": "weapon",
+      "icon": "boomerang",
+      "description": ""
+    },
+    "boots": {
+      "type": "feet",
+      "icon": "boots",
+      "description": ""
     },
     "bowie knife": {
       "type": "weapon",
       "icon": "bowie-knife",
       "description": "Now this is a knife."
     },
+    "bowling pin": {
+      "type": "weapon",
+      "icon": "bowling-pin",
+      "description": ""
+    },
+    "boxing glove": {
+      "type": "weapon",
+      "icon": "boxing-glove",
+      "description": ""
+    },
+    "brass knuckles": {
+      "type": "weapon",
+      "icon": "brass-knuckles",
+      "description": ""
+    },
+    "briefcase": {
+      "type": "weapon",
+      "icon": "briefcase",
+      "description": ""
+    },
+    "broad dagger": {
+      "type": "weapon",
+      "icon": "broad-dagger",
+      "description": ""
+    },
     "broadsword": {
       "type": "weapon",
       "icon": "broadsword",
       "description": "This thing has a big ol' blade. Looks friggin' boss."
+    },
+    "brodie helmet": {
+      "type": "head",
+      "icon": "brodie-helmet",
+      "description": ""
+    },
+    "broom": {
+      "type": "weapon",
+      "icon": "broom",
+      "description": ""
+    },
+    "butterfly knife": {
+      "type": "weapon",
+      "icon": "butterfly-knife",
+      "description": ""
     },
     "cardboard box shoes": {
       "type": "feet",
       "icon": "cardboard-box",
       "description": "You accidently stumbled into them and haven't yet bothered to take them off."
     },
+    "chainmail": {
+      "type": "torso",
+      "icon": "chain-mail",
+      "description": ""
+    },
+    "chainsaw": {
+      "type": "weapon",
+      "icon": "chainsaw",
+      "description": ""
+    },
+    "cowboy boots": {
+      "type": "feet",
+      "icon": "cowboy-boot",
+      "description": ""
+    },
+    "croc sword": {
+      "type": "weapon",
+      "icon": "croc-sword",
+      "description": ""
+    },
+    "crossbow": {
+      "type": "weapon",
+      "icon": "crossbow",
+      "description": ""
+    },
+    "crowbar": {
+      "type": "weapon",
+      "icon": "crowbar",
+      "description": "arguable the most powerful weapon humanity has ever wielded"
+    },
+    "crown": {
+      "type": "head",
+      "icon": "crown",
+      "description": ""
+    },
+    "dress": {
+      "type": "torso",
+      "icon": "dress",
+      "description": ""
+    },
+    "fedora": {
+      "type": "head",
+      "icon": "fedora",
+      "description": ""
+    },
+    "fez": {
+      "type": "head",
+      "icon": "fez",
+      "description": ""
+    },
+    "fur boots": {
+      "type": "feet",
+      "icon": "fur-boot",
+      "description": ""
+    },
+    "gladius": {
+      "type": "weapon",
+      "icon": "gladius",
+      "description": ""
+    },
+    "gloves": {
+      "type": "hands",
+      "icon": "gloves",
+      "description": ""
+    },
+    "guitar": {
+      "type": "weapon",
+      "icon": "guitar",
+      "description": ""
+    },
+    "headphones": {
+      "type": "head",
+      "icon": "headphones",
+      "description": ""
+    },
+    "high heels": {
+      "type": "feet",
+      "icon": "high-heel",
+      "description": ""
+    },
+    "iron mask": {
+      "type": "head",
+      "icon": "iron-mask",
+      "description": ""
+    },
     "katana": {
       "type": "weapon",
       "icon": "katana",
       "description": "bought from an ocean side novelty shop. You thought it looked cool, so the purchase was justified"
     },
+    "kevlar": {
+      "type": "torso",
+      "icon": "kevlar-vest",
+      "description": ""
+    },
+    "kimono": {
+      "type": "torso",
+      "icon": "kimono",
+      "description": ""
+    },
+    "lamellar": {
+      "type": "torso",
+      "icon": "lamellar",
+      "description": ""
+    },
+    "lead pipe": {
+      "name": "lead pipe",
+      "icon": "lead-pipe",
+      "desc": ""
+    },
+    "leather boots": {
+      "type": "feet",
+      "icon": "leather-boot",
+      "description": ""
+    },
+    "leather vest": {
+      "type": "torso",
+      "icon": "leather-vest",
+      "description": ""
+    },
+    "mace": {
+      "type": "weapon",
+      "icon": "flanged-mace",
+      "description": ""
+    },
+    "monkey wrench": {
+      "type": "weapon",
+      "icon": "monkey-wrench",
+      "description": ""
+    },
+    "motorcycle helmet": {
+      "type": "feet",
+      "icon": "full-motorcycle-helmet",
+      "description": ""
+    },
+    "ninja mask": {
+      "type": "head",
+      "icon": "ninja-mask",
+      "description": ""
+    },
     "pigskin": {
       "type": "weapon",
       "icon": "american-football-ball",
       "description": "From the depths of someone's garage. You've never used it and you hope you never have to..."
+    },
+    "plaster shoes": {
+      "type": "feet",
+      "icon": "foot-plaster",
+      "description": ""
+    },
+    "rubber chicken": {
+      "type": "weapon",
+      "icon": "chicken",
+      "description": "a birthday present once. It wasn't funny then but it's hilarious now."
+    },
+    "spellbook": {
+      "type": "weapon",
+      "icon": "black-book",
+      "description": ""
     }
   },
   "traits": {
     "smelly": {
       "name": "smelly",
+      "icon": "",
       "desc" : "The item smells like.... mold? eggs? sulphur? You can't quite place it, as it burns your nose too much to try",
       "mod": {
         "evasion": 1.5
       }
     },
+    "blessed": {
+      "name": "blessed",
+      "icon": "",
+      "desc": "The gods smile upon this item",
+      "mod" : {
+        "holyness": 2.0
+      }
+    },
     "broken": {
       "name": "broken",
+      "icon": "broken-bone",
       "desc": "It's in terrible shape, it hardly even works anymore, but so much blood and sweat has been stained into it that you need to see how far it can actually go.",
       "mod" : {
         "strength": 1.5,
         "accuracy": 0.6
       }
     },
+    "electric": {
+      "name": "electric",
+      "icon": "electric",
+      "desc": "equipping the item makes your hair stand on end",
+      "mod" : {
+        "electric damage": 1.4
+      }
+    },
+    "evil": {
+      "name": "electric",
+      "icon": "evil-eyes",
+      "desc": "there are dark forced that live in this object. it puts bad thoughts in your head.",
+      "mod" : {
+        "electric damage": 1.4
+      }
+    },
+    "healing": {
+      "name": "healing",
+      "icon": "caduceus",
+      "desc": "a steady flow of life eminates from this weapon. makes it kind of hard to attack with.",
+      "mod" : {
+        "health gen": 0.3,
+        "attack": 0.3
+      }
+    },
     "hot": {
       "name": "hot",
+      "icon": "flame",
       "desc": "hard to handle because it always feels like it came out of liquid hot magma. After a while you get used to holding it, as the last few receptors in your hand explode",
       "mod" : {
         "fire damage": 1.5,
         "self-burn": 0.1
+      }
+    },
+    "invisible": {
+      "name": "invisible",
+      "icon": "invisible",
+      "desc": "",
+      "mod" : {
+      }
+    },
+    "leeching": {
+      "name": "leeching",
+      "icon": "leeching-worm",
+      "desc": "",
+      "mod" : {
+        "leeching": 1.7
+      }
+    },
+    "lucky": {
+      "name": "lucky",
+      "icon": "clover",
+      "desc": "things just seem to always go your way when you have this equipped",
+      "mod" : {
+        "luck": 1.7
+      }
+    },
+    "prickly": {
+      "name": "prickly",
+      "icon": "cactus",
+      "desc": "hurts when equipped. Who made this?",
+      "mod" : {
+        "bleed": 0.3
+      }
+    },
+    "silent": {
+      "name": "silent",
+      "icon": "mute",
+      "desc": "",
+      "mod" : {
+        "sneak": 1.5
+      }
+    },
+    "slippery": {
+      "name": "slippery",
+      "icon": "drop-weapon",
+      "desc": "item is hard to hold, for some reason you can't quite get a hold of it.",
+      "mod" : {
+        "attack": 0.9
+      }
+    },
+    "toxic": {
+      "name": "toxic",
+      "icon": "biohazard",
+      "desc": "should probably wash your self after touching it",
+      "mod" : {
+        "poison": 0.3
       }
     }
   }
