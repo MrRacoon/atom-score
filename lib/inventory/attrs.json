@@ -239,12 +239,12 @@
     "lead pipe": {
       "name": "lead pipe",
       "icon": "lead-pipe",
-      "desc": ""
+      "desc": "oh geez, i hope i never half to use this"
     },
     "leather boots": {
       "type": "feet",
       "icon": "leather-boot",
-      "description": ""
+      "description": "durable and light, these boots go really well with your legend of zelda cosplay"
     },
     "leather vest": {
       "type": "torso",
@@ -289,7 +289,7 @@
     "spellbook": {
       "type": "weapon",
       "icon": "black-book",
-      "description": ""
+      "description": "it's all written in a language you've never seen before, but somehow... you understand everything..."
     }
   },
   "traits": {
