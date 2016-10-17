@@ -4,23 +4,23 @@
       "mod": 0.1,
       "weight": 100
     },
-    "cheap"       : {
+    "cheap": {
       "mod": 0.6,
       "weight": 50
     },
-    "sturdy"       : {
+    "sturdy": {
       "mod": 0.9,
       "weight": 20
     },
-    "reinforced"       : {
+    "reinforced": {
       "mod": 1.5,
       "weight": 10
     },
-    "invulnerable"       : {
+    "invulnerable": {
       "mod": 3.0,
       "weight": 5
     },
-    "thorged"       : {
+    "thorged": {
       "mod": 7.0,
       "weight": 1
     }
@@ -35,6 +35,16 @@
       "type": "torso",
       "icon": "armor-vest",
       "description": "Basically a large piece of metel welded around your body. Not very comfortable to sleep in."
+    },
+    "baseball bat": {
+      "type": "weapon",
+      "icon": "baseball-bat",
+      "description": "classic home evasion deterrent, you've given this thing about 87 nicknames by now"
+    },
+    "baton": {
+      "type": "weapon",
+      "icon": "baton",
+      "description": "this might have been the same one you got beat with during your college protestor phase"
     },
     "bo staff": {
       "type": "weapon",
@@ -55,6 +65,11 @@
       "type": "feet",
       "icon": "cardboard-box",
       "description": "You accidently stumbled into them and haven't yet bothered to take them off."
+    },
+    "katana": {
+      "type": "weapon",
+      "icon": "katana",
+      "description": "bought from an ocean side novelty shop. You thought it looked cool, so the purchase was justified"
     },
     "pigskin": {
       "type": "weapon",
