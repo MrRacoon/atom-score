@@ -1,22 +1,18 @@
 {
-  "context-menu": {
-    "atom-text-editor": [
-      {
-        "label": "Toggle vim-score",
-        "command": "vim-score:toggle"
-      }
-    ]
-  },
   "menu": [
     {
       "label": "Packages",
       "submenu": [
         {
-          "label": "vim-score",
+          "label": "atom-score",
           "submenu": [
             {
-              "label": "Toggle",
-              "command": "vim-score:toggle"
+              "label": "Show Panel",
+              "command": "atom-score:show-panel"
+            },
+            {
+              "label": "Hide Panel",
+              "command": "atom-score:hide-panel"
             }
           ]
         }

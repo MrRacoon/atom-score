@@ -1,6 +1,6 @@
 'use babel';
 
-import * as select from '../lib/selectors';
+import * as select from '../lib/state/selectors';
 import { repeat } from 'ramda';
 import { stimulusStub } from '../lib/behavior/stimuli';
 
