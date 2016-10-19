@@ -5,23 +5,25 @@
 
 ## Motivation
 
-A plugin for the Atom editor, to provide instant feedback during to your workflow.
+A stat game for motivating the user to [vim-mode][vimMode] better/harder.
 
-It's hard to break habits. And it's fun to play games. Let's build a system to keep track of your coding habits, and try to sway you into better habits with points.
+Commands like h,j,k,l have served me very well. But I feel like there is
+something better out there for me if I can only find the motivation to move past
+them. So I built a random loot generator. The level of the loot that I find
+depends on how well I'm doing with certain habits that I would like to reinforce
+or extinguish.
 
-For instance:
+For instance h,j,k,l carry negative weight. They drop my score *and* reset my
+streak. ^u, and ^d are carry a positive weight. They extend my score and streak.
+My goal is to always be near the high score (loot is better around there, and
+terrible near zero) and to keep my streak (which only makes the loot better). As
+a fun catch, the higher your score is when you are around zero, the much worse
+the loot gets. You need to stay away from zero.
 
-> You want to learn to be more vigilant about keeping code folds 'folded'
+## Early Access
 
-so if I **give 2 points** for closing folds, and **take 2 points** every time a fold is opened. The developer should eventually learn to close every fold they open right?
-
-TBO, I don't actually know the answer to that. That's why I built this experiment :)
-
-I'm compiling achievements and adding points to atom commands. Out of the gate, it's mostly all personal preference (you need to have [vim-mode][vimmode]). But I hope that soon I can have a profile system of sorts. And let the developer pick and choose the habits they want to hone.
-
-## Setup
-
-Currently, this package is undergoing rapid development. I don't feel it's mature enough at the moment to go on the atom package site. Until then you can play with the early stuff with:
+This package is not available yet on the [atom package site][atomPackages].
+But it's easy to get setup if you wanna play around with it. Use:
 
 ```
 git clone https://github.com/mrracoon/atom-score.git
@@ -29,10 +31,10 @@ cd atom-score
 apm link
 ```
 
-## Contributions
+## Credit
 
-Pull requests always welcome.
+Thank you [game-icons.net][gameIcons] for a ton of really great icons.
 
-![A screenshot of your package](https://f.cloud.github.com/assets/69169/2290250/c35d867a-a017-11e3-86be-cd7c5bf3ff9b.gif)
-
-[vimmode]: https://github.com/atom/vim-mode
+[vimMode]: https://github.com/atom/vim-mode
+[gameIcons]: http://game-icons.net/about.html#authors
+[atomPackages]: https://atom.io/packages
