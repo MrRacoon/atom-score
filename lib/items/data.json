@@ -49,7 +49,12 @@
     "beard": {
       "type": "head",
       "icon": "beard",
-      "description": ""
+      "description": "",
+      "mods": {
+        "vagrancy" : 1.4,
+        "transience": 1.2,
+        "face warmth": 1.4
+      }
     },
     "beer bottle": {
       "type": "weapon",
@@ -79,7 +84,7 @@
     "bowie knife": {
       "type": "weapon",
       "icon": "bowie-knife",
-      "description": "Now this is a knife."
+      "description": "won at an auction. I thought. it's previous owner was 1980's glam rock king. sir david."
     },
     "bowling pin": {
       "type": "weapon",
@@ -94,12 +99,12 @@
     "brass knuckles": {
       "type": "weapon",
       "icon": "brass-knuckles",
-      "description": ""
+      "description": "Those funkle monkles"
     },
     "briefcase": {
       "type": "weapon",
       "icon": "briefcase",
-      "description": ""
+      "description": "it's filled with IOU's, here's one for a ferrari, "
     },
     "broad dagger": {
       "type": "weapon",
@@ -119,7 +124,7 @@
     "broom": {
       "type": "weapon",
       "icon": "broom",
-      "description": ""
+      "description": "but it's not really a broom, it's a horse"
     },
     "butterfly knife": {
       "type": "weapon",
@@ -159,7 +164,7 @@
     "crowbar": {
       "type": "weapon",
       "icon": "crowbar",
-      "description": "arguable the most powerful weapon humanity has ever wielded"
+      "description": "arguably the most powerful weapon humanity has ever wielded"
     },
     "crown": {
       "type": "head",
@@ -184,7 +189,7 @@
     "fur boots": {
       "type": "feet",
       "icon": "fur-boot",
-      "description": ""
+      "description": "Uggh, these things again"
     },
     "gladius": {
       "type": "weapon",
@@ -194,22 +199,24 @@
     "gloves": {
       "type": "hands",
       "icon": "gloves",
-      "description": ""
+      "description": "you know what they say about big gloves? it's winter"
     },
     "guitar": {
       "type": "weapon",
       "icon": "guitar",
-      "description": ""
+      "description": "Fender Stratocaster with triple single coil pickups and a whammy bar. Pre-CBS Fender corporate buy-out. I'd raise the bridge and take the buzz out of the low E."
     },
     "headphones": {
       "type": "head",
       "icon": "headphones",
-      "description": ""
+      "description": "heck yeah, they go to 11!",
+      "mods": {
+      }
     },
     "high heels": {
       "type": "feet",
       "icon": "high-heel",
-      "description": ""
+      "description": "I asked for stillettos and they gave me these shoes"
     },
     "iron mask": {
       "type": "head",
@@ -219,7 +226,12 @@
     "katana": {
       "type": "weapon",
       "icon": "katana",
-      "description": "bought from an ocean side novelty shop. You thought it looked cool, so the purchase was justified"
+      "description": "bought from an ocean side novelty shop. it has randy jackson's signature on it"
+    },
+    "kaunch": {
+      "type": "weapon",
+      "icon": "spiral-shell",
+      "description": "you have been granted permission to speak"
     },
     "kevlar": {
       "type": "torso",
@@ -254,7 +266,7 @@
     "mace": {
       "type": "weapon",
       "icon": "flanged-mace",
-      "description": ""
+      "description": "not the spray, but equally as painfull to the eyes"
     },
     "monkey wrench": {
       "type": "weapon",
@@ -274,7 +286,7 @@
     "pigskin": {
       "type": "weapon",
       "icon": "american-football-ball",
-      "description": "From the depths of someone's garage. You've never used it and you hope you never have to..."
+      "description": "From the depths of the garage. You've never used it and you hope you never have to..."
     },
     "plaster shoes": {
       "type": "feet",
@@ -285,6 +297,11 @@
       "type": "weapon",
       "icon": "chicken",
       "description": "a birthday present once. It wasn't funny then but it's hilarious now."
+    },
+    "sliced bread": {
+      "type": "weapon",
+      "icon": "slice-bread",
+      "description": "well... this is the greatest thing ever"
     },
     "spellbook": {
       "type": "weapon",
@@ -303,7 +320,7 @@
     },
     "blessed": {
       "name": "blessed",
-      "icon": "",
+      "icon": "angel-wings",
       "desc": "The gods smile upon this item",
       "mod" : {
         "holyness": 2.0
