@@ -1,7 +1,7 @@
 {
   "conditions": {
     "feable"       : {
-      "mod": 0.1,
+      "mod": 0.3,
       "weight": 100
     },
     "cheap": {
@@ -13,15 +13,15 @@
       "weight": 20
     },
     "reinforced": {
-      "mod": 1.5,
+      "mod": 1.2,
       "weight": 10
     },
     "invulnerable": {
-      "mod": 3.0,
+      "mod": 1.5,
       "weight": 5
     },
     "thorged": {
-      "mod": 7.0,
+      "mod": 2.0,
       "weight": 1
     }
   },
@@ -64,12 +64,12 @@
     "blunderbuss": {
       "type": "weapon",
       "icon": "blunderbuss",
-      "description": "Memories of your old karate teacher flood your mind as you hold it. Memories your've tried to supress for years..."
+      "description": ""
     },
     "bo staff": {
       "type": "weapon",
       "icon": "bo",
-      "description": "Memories of your old karate teacher flood your mind as you hold it. Memories your've tried to supress for years..."
+      "description": ""
     },
     "boomerang": {
       "type": "weapon",
