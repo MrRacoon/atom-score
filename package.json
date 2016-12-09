@@ -21,7 +21,7 @@
   "dependencies": {
     "chance": "^1.0.4",
     "d3": "^4.2.2",
-    "partial.lenses": "^3.9.4",
+    "partial.lenses": "^5.0.0",
     "ramda": "^0.22.1"
   },
   "consumedServices": {
