@@ -22,7 +22,9 @@
     "chance": "^1.0.4",
     "d3": "^4.2.2",
     "partial.lenses": "^5.0.0",
-    "ramda": "^0.22.1"
+    "ramda": "^0.22.1",
+    "redux": "^3.6.0",
+    "reredeux": "^0.1.1"
   },
   "consumedServices": {
     "status-bar": {
