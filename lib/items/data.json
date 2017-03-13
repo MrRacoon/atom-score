@@ -363,7 +363,7 @@
     "hot": {
       "name": "hot",
       "icon": "flame",
-      "desc": "hard to handle because it always feels like it came out of liquid hot magma. After a while you get used to holding it, as the last few receptors in your hand explode",
+      "desc": "this item always feels like it came out of liquid hot magma. After a while you get used to holding it, as your last few subdermal receptors explode",
       "mod" : {
         "fire damage": 1.5,
         "self-burn": 0.1
