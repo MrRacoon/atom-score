@@ -28,6 +28,7 @@ But it's easy to get setup if you wanna play around with it. Use:
 ```
 git clone https://github.com/mrracoon/atom-score.git
 cd atom-score
+npm install
 apm link
 ```
 
