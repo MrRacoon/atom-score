@@ -300,7 +300,7 @@
     },
     "sliced bread": {
       "type": "weapon",
-      "icon": "slice-bread",
+      "icon": "sliced-bread",
       "description": "well... this is the greatest thing ever"
     },
     "spellbook": {
