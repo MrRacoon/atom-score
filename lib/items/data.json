@@ -29,7 +29,7 @@
     "armored pants": {
       "type": "legs",
       "icon": "armored-pants",
-      "description": "They're not easy to gett off. Others have grown used to the pee smell that follows you"
+      "description": "They're not easy to get off. No matter, the tale of your smell is well beyond any of your accomplishmets"
     },
     "armored vest": {
       "type": "torso",
@@ -49,7 +49,7 @@
     "beard": {
       "type": "head",
       "icon": "beard",
-      "description": "",
+      "description": "sometimes the only protection your head needs, is the confidence that you have a badass beard",
       "mods": {
         "vagrancy" : 1.4,
         "transience": 1.2,

@@ -7,12 +7,20 @@
           "label": "atom-score",
           "submenu": [
             {
-              "label": "Show Panel",
-              "command": "atom-score:show-panel"
+              "label": "Show Atom Score",
+              "command": "atom-score:show"
             },
             {
-              "label": "Hide Panel",
-              "command": "atom-score:hide-panel"
+              "label": "Hide Atom Score",
+              "command": "atom-score:hide"
+            },
+            {
+              "label": "Toggle Atom Score",
+              "command": "atom-score:toggle"
+            },
+            {
+              "label": "Reset Atom Score",
+              "command": "atom-score:reset"
             }
           ]
         }
