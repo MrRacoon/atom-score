@@ -16,7 +16,7 @@
     "test": "npm run lint && npm run spec"
   },
   "engines": {
-    "atom": ">=1.0.0 <2.0.0"
+    "atom": ">=1.21.0 <2.0.0"
   },
   "dependencies": {
     "chance": "^1.0.4",
@@ -24,13 +24,6 @@
     "ramda": "^0.23.0",
     "redux": "^3.6.0",
     "reredeux": "^0.1.1"
-  },
-  "consumedServices": {
-    "status-bar": {
-      "versions": {
-        "^1.0.0": "consumeStatusBar"
-      }
-    }
   },
   "devDependencies": {
     "chai": "^3.5.0",
