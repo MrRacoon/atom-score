@@ -22,7 +22,7 @@
     "chance": "^1.0.4",
     "d3": "^4.2.2",
     "ramda": "^0.27.0",
-    "redux": "^3.6.0",
+    "redux": "^4.0.5",
     "reredeux": "^0.1.1"
   },
   "devDependencies": {
