@@ -21,7 +21,7 @@
   "dependencies": {
     "chance": "^1.0.4",
     "d3": "^4.2.2",
-    "ramda": "^0.23.0",
+    "ramda": "^0.27.0",
     "redux": "^3.6.0",
     "reredeux": "^0.1.1"
   },
