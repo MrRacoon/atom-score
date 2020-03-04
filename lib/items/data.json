@@ -372,14 +372,14 @@
     "invisible": {
       "name": "invisible",
       "icon": "invisible",
-      "desc": "",
+      "desc": "remeber to sheath it when you have to use the loon",
       "mod" : {
       }
     },
     "leeching": {
       "name": "leeching",
       "icon": "leeching-worm",
-      "desc": "",
+      "desc": "absorbs healt from anything it...touches",
       "mod" : {
         "leeching": 1.7
       }
@@ -403,7 +403,7 @@
     "silent": {
       "name": "silent",
       "icon": "mute",
-      "desc": "",
+      "desc": "...",
       "mod" : {
         "sneak": 1.5
       }
